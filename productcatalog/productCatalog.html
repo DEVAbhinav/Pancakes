@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="library.js"></script>
+</head>
+<body>
+<h1>Product Catalog</h1>
+    <H2>Search Product by ID</H2>
+    <input type="text" id="searchProductID">
+    <button id = "bttnSearchProduct">Search Product</button>
+    <br>
+    <H2>Search Product by Price</H2>
+    <input type="text" id="searchProductsbyPrice">
+    <button id = "bttnSearchProductsByPrice">Search Price</button>
+    <br>
+    <H2>Search Product by Type</H2>
+    <input type="text" id="searchProductsByType">
+    <button id = "bttnSearchProductsByType">Search Type</button>
+    <br>
+
+    <div>
+        <h2>Examined Product</h2>
+        <p id="productText">Product Id: <br>Price: <br>Type: </p>
+    </div>
+    <div>
+        <h2>List of Similar Products</h2>
+        <table id ="similarProductsTable">
+            <tr>
+                <th>ProductId</th>
+
+                <th>Type</th>
+                <th>Price</th>
+                <th>Examine</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="all Products">
+        <h2>List of all products:</h2>
+        <table id="allProductsTable">
+                <thead>
+                    <th>ProductId</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Examine</th>
+                </thead>
+        </table>
+    </div>
+    
+
+    <script src = "productCatalog.js"></script>
+</body>
+</html>
