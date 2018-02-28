@@ -10,15 +10,7 @@ var record = document.getElementById("record").addEventListener("click", record)
 
 
 
-document.addEventListener("keypress", function(key) {
-    console.log(key.key)
-    if(key.key == 's') {
-        startStop();}
-    if(key.key == 'r'){
-        reset();}
-    if(key.key == 'l'){
-        record();}
-});
+
 function startTimer() {
     timerRef =  setInterval(function timer() {
         //var currentTime = (new Date).getTime();
@@ -50,3 +42,14 @@ function record () {
     li.innerHTML = (startTime/100).toFixed(2);
     list.appendChild(li)
 }
+
+document.addEventListener("keypress", function(key) {
+    console.log(key.key)
+    
+    if(key.key == 'r'){
+        reset();}
+    if(key.key == 's') {
+        startStop();}
+    if(key.key == 'l'){
+        record();}
+});
